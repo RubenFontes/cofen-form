@@ -16,7 +16,7 @@ body{
 main{
     display: flex;
     align-items: left;
-    margin: 75px 0;
+    margin-top: 75px;
     margin-left: 120px;
 }
 
@@ -46,7 +46,7 @@ header section{
     background-color: #0C97B0;
 }
 
-main form .title{
+.title{
     font-size: 1.4rem;
     border-left: 0.4rem solid #2b81e8;
     font-weight: 700;
@@ -58,7 +58,6 @@ main form .title{
 
 main form{
     background-color: white;
-    margin-bottom: 25px;
     padding: 3rem 4rem;
     border-radius: .5rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -67,7 +66,6 @@ main form{
 main form div{
     margin: 10px 0;
 }
-
 
 label{
     color: black;
@@ -195,6 +193,28 @@ button:hover{
     background-color: #0C97B0;
 }
 
+.section.title{
+    margin: 75px 120px;
+}
+
+.accordion{
+    margin: 0 120px 120px;
+    border-radius: .4rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
+}
+
+button.accordion-button{
+    margin: 0;
+}
+
+.accordion-button:hover{
+    background-color: #0C97B0;
+    color: white !important;
+}
+
+.accordion-button.collapsed:hover::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
 
 footer{
     background-color: #2b81e8;
@@ -284,8 +304,13 @@ footer div img:hover{
     header div img{
         padding-left: 0;
     }
+    .accordion{
+        margin: 0 2rem 120px;
+    }
+    .section.title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-left: none;
+    }
 }
-
-
-
-
